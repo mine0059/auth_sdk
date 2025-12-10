@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class GoogleSignInButton extends StatelessWidget {
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
   final bool isLoading;
   
   const GoogleSignInButton({
@@ -27,7 +27,7 @@ class GoogleSignInButton extends StatelessWidget {
 }
 
 class AppleSignInButton extends StatelessWidget {
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
   final bool isLoading;
   
   const AppleSignInButton({
