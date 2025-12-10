@@ -1,29 +1,29 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-migrate_working_dir/
+# Firebase Config - NEVER COMMIT!
+**/google-services.json
+**/GoogleService-Info.plist
+**/firebase_options.dart
+**/firebase.json
 
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
+# Flutter auto-generated
+.flutter-plugins-dependencies
+**/.flutter-plugins
+**/.dart_tool/
+**/.packages
+**/build/
+**/.metadata
+
+# IDE
 .idea/
+.vscode/
+*.iml
+*.iws
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# macOS
+.DS_Store
 
-# Flutter/Dart/Pub related
-# Libraries should not include pubspec.lock, per https://dart.dev/guides/libraries/private-files#pubspeclock.
-/pubspec.lock
-**/doc/api/
-.dart_tool/
-build/
+# Windows
+Thumbs.db
+
+# Environment
+.env
+*.env
