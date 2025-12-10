@@ -363,7 +363,7 @@ This project is licensed under the MIT License.
 
 ## 👥 Authors
 
-Created by HNG Mobile Track Stage 8 Team
+Onojefemue Oghenemine Emmanuel (EmmanuelO)
 
 ## 🐛 Issues & Support
 
