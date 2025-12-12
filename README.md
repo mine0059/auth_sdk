@@ -364,6 +364,7 @@ This project is licensed under the MIT License.
 ## 👥 Authors
 
 Onojefemue Oghenemine Emmanuel (EmmanuelO)
+Nwankwo Dumebi (Dusso)
 
 ## 🐛 Issues & Support
 
