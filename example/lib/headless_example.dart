@@ -99,13 +99,16 @@ class _HeadlessExampleState extends State<HeadlessExample>
         _signInPasswordController.text,
       );
     } on InvalidCredentialsException catch (e) {
-      _setError(e.message);
+      // _setError(e.message);
+      _setError('Invalid email or password');
     } on UserNotFoundException catch (e) {
-      _setError(e.message);
+      _setError('No account found with this email');
     } on NetworkException catch (e) {
-      _setError(e.message);
+      _setError('No internet connection');
+    } on AuthException catch (e) {
+      _setError(e.message); // Generic SDK error
     } catch (e) {
-      _setError(e.toString());
+      _setError('An unexpected error occurred');
     } finally {
       setState(() => _isLoading = false);
     }
@@ -132,15 +135,17 @@ class _HeadlessExampleState extends State<HeadlessExample>
         );
       }
     } on EmailAlreadyInUseException catch (e) {
-      _setError(e.message);
+      _setError('Email already in use');
     } on WeakPasswordException catch (e) {
-      _setError(e.message);
+      _setError('Weak password');
     } on InvalidCredentialsException catch (e) {
-      _setError(e.message);
+      _setError('Invalid email or password');
     } on NetworkException catch (e) {
-      _setError(e.message);
+      _setError('No internet connection');
+    } on AuthException catch (e) {
+      _setError(e.message); // Generic SDK error
     } catch (e) {
-      _setError(e.toString());
+      _setError('An unexpected error occurred');
     } finally {
       setState(() => _isLoading = false);
     }
