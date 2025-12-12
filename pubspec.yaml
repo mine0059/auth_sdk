@@ -1,5 +1,6 @@
 name: auth_sdk
-description: "A new Flutter package project."
+description: "A Flutter authentication SDK providing pre-built UI and headless state management for Firebase, Google, and Apple Sign-In."
+repository: https://github.com/mine0059/auth_sdk.git
 version: 0.0.1
 homepage:
 

@@ -1,0 +1,5 @@
+.flutter-plugins
+.metadata
+example/.metadata
+example/android/app/google-services.json
+example/lib/firebase_options.dart

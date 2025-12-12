@@ -20,9 +20,10 @@ packages:
   auth_sdk:
     dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
+      name: auth_sdk
+      sha256: a501c2e319ba4e2163222c23b5582fdcb2d49e90132f93deede31d63201e4578
+      url: "https://pub.dev"
+    source: hosted
     version: "0.0.1"
   bloc:
     dependency: transitive
