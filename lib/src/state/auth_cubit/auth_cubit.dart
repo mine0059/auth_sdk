@@ -16,13 +16,12 @@ class AuthCubit extends Cubit<AuthState> {
   final AuthService _service;
 
   void _handleAuthUpdates(user) {
-    debugPrint(
-        '🔴 AuthCubit: Auth state update - User: ${user?.email ?? "null"}');
+    debugPrint('AuthCubit: Auth state update - User: ${user?.email ?? "null"}');
     if (user == null) {
-      debugPrint('🔴 AuthCubit: Emitting UNAUTHENTICATED');
+      debugPrint('AuthCubit: Emitting UNAUTHENTICATED');
       emit(state.copyWith(status: AuthStatus.unauthenticated, user: null));
     } else {
-      debugPrint('🔴 AuthCubit: Emitting AUTHENTICATED');
+      debugPrint('AuthCubit: Emitting AUTHENTICATED');
       emit(state.copyWith(status: AuthStatus.authenticated, user: user));
     }
   }

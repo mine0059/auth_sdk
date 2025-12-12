@@ -80,8 +80,8 @@ class FirebaseAuthService implements AuthService {
 
   Exception mapFirebaseError(FirebaseAuthException e) {
     // Log for debugging
-    debugPrint('🔴 Firebase Error Code: ${e.code}');
-    debugPrint('🔴 Firebase Error Message: ${e.message}');
+    debugPrint('Firebase Error Code: ${e.code}');
+    debugPrint('Firebase Error Message: ${e.message}');
 
     switch (e.code) {
       // Invalid credentials - THIS IS THE ERROR YOU'RE SEEING
@@ -115,7 +115,7 @@ class FirebaseAuthService implements AuthService {
 
       // Catch-all for unmapped errors
       default:
-        debugPrint('⚠️ UNMAPPED ERROR CODE: ${e.code}');
+        debugPrint('UNMAPPED ERROR CODE: ${e.code}');
         return Exception(e.message ?? 'Unknown error occurred');
     }
   }

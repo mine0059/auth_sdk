@@ -45,7 +45,7 @@ class _HeadlessExampleState extends State<HeadlessExample>
     // Listen to auth state changes using the stream
     widget.authRepository.authStateStream.listen((user) {
       debugPrint(
-          '🟢 Headless: Auth state changed - User: ${user?.email ?? "null"}');
+          'Headless: Auth state changed - User: ${user?.email ?? "null"}');
       setState(() {
         _currentUser = user;
       });
