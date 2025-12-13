@@ -1,5 +1,7 @@
 Auth SDK
 
+[![Pub Version](https://img.shields.io/pub/v/auth_sdk)](https://pub.dev/packages/auth_sdk)
+
 A flexible, Firebase-powered authentication SDK for Flutter that supports both **pre-built UI** and **headless (custom UI) modes**.
 
 🌟 Features
@@ -39,12 +41,17 @@ Headless Mode (Custom UI)
 
 📦 Installation
 
-Add this to your `pubspec.yaml`:
+Run this command:
+
+```bash
+flutter pub add auth_sdk
+```
+
+Or manually add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  auth_sdk:
-    path: ../auth_sdk  # Or your published package path
+  auth_sdk: ^0.0.1
   firebase_core: ^4.2.1
   firebase_auth: ^6.1.2
   flutter_bloc: ^9.1.1  # Only needed if using pre-built UI mode
