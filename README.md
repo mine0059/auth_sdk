@@ -1,8 +1,8 @@
-# Auth SDK
+Auth SDK
 
 A flexible, Firebase-powered authentication SDK for Flutter that supports both **pre-built UI** and **headless (custom UI) modes**.
 
-## 🌟 Features
+🌟 Features
 
 - ✅ **Multiple Auth Providers**: Email/Password, Google Sign-In, (Apple Sign-In coming soon)
 - ✅ **Dual Modes**: Pre-built UI widget or headless mode for complete customization
@@ -13,8 +13,8 @@ A flexible, Firebase-powered authentication SDK for Flutter that supports both *
 - ✅ **Stream-based**: Reactive auth state changes
 - ✅ **Type-safe**: Full TypeScript-like null safety
 
-## 📱 Screenshots
-### Pre-built UI Mode
+📱 Screenshots
+Pre-built UI Mode
 <table>
   <tr>
     <td><img src="screenshots/pre_built_login.png.png" width="250"/></td>
@@ -23,7 +23,7 @@ A flexible, Firebase-powered authentication SDK for Flutter that supports both *
     <td align="center">Sign In</td>
   </tr>
 </table>
-### Headless Mode (Custom UI)
+Headless Mode (Custom UI)
 <table>
   <tr>
     <td><img src="screenshots/headless_login.png.png" width="250"/></td>
@@ -37,7 +37,7 @@ A flexible, Firebase-powered authentication SDK for Flutter that supports both *
   </tr>
 </table>
 
-## 📦 Installation
+📦 Installation
 
 Add this to your `pubspec.yaml`:
 
@@ -56,9 +56,9 @@ Then run:
 flutter pub get
 ```
 
-## 🚀 Quick Start
+🚀 Quick Start
 
-### 1. Initialize Firebase
+1. Initialize Firebase
 
 ```dart
 void main() async {
@@ -68,9 +68,9 @@ void main() async {
 }
 ```
 
-### 2. Choose Your Mode
+2. Choose Your Mode
 
-#### **Option A: Pre-built UI Mode** (Fastest Setup)
+**Option A: Pre-built UI Mode** (Fastest Setup)
 
 ```dart
 import 'package:auth_sdk/auth_sdk.dart';
@@ -105,7 +105,7 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-#### **Option B: Headless Mode** (Full Control)
+**Option B: Headless Mode** (Full Control)
 
 ```dart
 import 'package:auth_sdk/auth_sdk.dart';
@@ -153,11 +153,11 @@ class _CustomLoginScreenState extends State<CustomLoginScreen> {
 }
 ```
 
-## 📚 API Reference
+📚 API Reference
 
-### AuthRepository (Headless Mode)
+AuthRepository (Headless Mode)
 
-#### Methods
+Methods
 
 | Method | Description | Throws |
 |--------|-------------|--------|
@@ -167,15 +167,15 @@ class _CustomLoginScreenState extends State<CustomLoginScreen> {
 | `signOut()` | Sign out current user | - |
 | `getIdToken({refresh})` | Get user's ID token | `TokenExpiredException` |
 
-#### Streams
+Streams
 
 | Stream | Type | Description |
 |--------|------|-------------|
 | `authStateStream` | `Stream<AuthUser?>` | Emits current auth user or null |
 
-### AuthCubit (UI Mode)
+AuthCubit (UI Mode)
 
-#### Methods
+Methods
 
 | Method | Description |
 |--------|-------------|
@@ -184,7 +184,7 @@ class _CustomLoginScreenState extends State<CustomLoginScreen> {
 | `signInWithGoogle()` | Sign in with Google |
 | `signOut()` | Sign out current user |
 
-#### States
+States
 
 ```dart
 enum AuthStatus {
@@ -196,7 +196,7 @@ enum AuthStatus {
 }
 ```
 
-### AuthConfig
+AuthConfig
 
 Configure which auth methods to show in pre-built UI:
 
@@ -218,7 +218,7 @@ AuthConfig(
 )
 ```
 
-## ❌ Error Handling
+❌ Error Handling
 
 The SDK provides typed exceptions for clear error handling:
 
@@ -231,7 +231,7 @@ The SDK provides typed exceptions for clear error handling:
 | `TokenExpiredException` | `token-expired` | User's session expired |
 | `NetworkException` | `network-error` | Network connectivity issue |
 
-### Example Error Handling
+Example Error Handling
 
 ```dart
 try {
@@ -247,7 +247,7 @@ try {
 }
 ```
 
-## 🎨 UI Customization (Pre-built Widget)
+🎨 UI Customization (Pre-built Widget)
 
 The `AuthWidget` provides a clean, Material Design interface. Customize it using:
 
@@ -261,9 +261,9 @@ AuthWidget(
 )
 ```
 
-## 🔧 Advanced Usage
+🔧 Advanced Usage
 
-### Custom AuthService Implementation
+Custom AuthService Implementation
 
 You can implement your own auth backend:
 
@@ -287,7 +287,7 @@ final customService = CustomAuthService();
 final authRepository = AuthRepository(customService);
 ```
 
-### Token Management
+Token Management
 
 ```dart
 // Get current user's ID token
@@ -305,7 +305,7 @@ final response = await http.get(
 
 ## 📱 Platform Setup
 
-### Android
+Android
 
 1. Add `google-services.json` to `android/app/`
 2. Update `android/build.gradle`:
@@ -323,7 +323,7 @@ final response = await http.get(
    }
    ```
 
-### iOS
+iOS
 
 1. Add `GoogleService-Info.plist` to `ios/Runner/`
 2. Update `Info.plist` for Google Sign-In:
@@ -339,7 +339,7 @@ final response = await http.get(
    </array>
    ```
 
-## 📖 Example App
+📖 Example App
 
 Check the `/example` folder for complete implementations of both modes:
 
@@ -353,23 +353,24 @@ cd example
 flutter run
 ```
 
-## 🤝 Contributing
+🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+📄 License
 
 This project is licensed under the MIT License.
 
-## 👥 Authors
+👥 Authors
 
 Onojefemue Oghenemine Emmanuel (EmmanuelO)
+
 Nwankwo Dumebi (Dusso)
 
-## 🐛 Issues & Support
+🐛 Issues & Support
 
 For issues, feature requests, or questions, please file an issue on GitHub.
 
 ---
 
-**Made with ❤️ for the Flutter community**
+Made with ❤️ for the Flutter community
